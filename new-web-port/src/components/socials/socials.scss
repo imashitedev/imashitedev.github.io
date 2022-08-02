@@ -1,0 +1,52 @@
+.socials{
+    background: #EAE5E6;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+    .container{
+            width: 100%;
+            
+        h1{
+            color: #666666;
+            font-weight: 400;
+            
+            
+            
+        }
+
+    }
+    
+}
+
+.social-container{
+    background: #CCCCCC;
+    padding: 25px 50px;
+    
+    
+
+}
+
+a.social{
+
+    margin: 0 1rem;
+    transition: transform 250ms;
+    display: inline-block;
+        }
+
+a.social:hover{
+    transform: translateY(-2px);
+}
+
+a.twitter{
+    color: blue;
+}
+
+a.github{
+    color: grey;
+}
+
+a.instagram{
+    color: black;
+}

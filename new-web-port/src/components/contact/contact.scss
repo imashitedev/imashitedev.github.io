@@ -1,0 +1,140 @@
+@import "../../global.scss";
+
+.contact{
+    background-color: white;
+    display: flex;
+
+    @include mobile{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left{
+        flex: 1;
+        height: 100%;
+        overflow: hidden;
+
+        img{
+            height: 100%;
+
+            
+            
+        }
+    }
+    .right{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        @include mobile{
+            width: inherit;
+        }
+        
+        @include mobileTab{
+            width: inherit;
+        }
+
+        @include mobileSmall{
+            width: inherit;
+        }
+
+        h2{
+            font-size:30px;
+
+            @include mobile{
+                font-size:25px;
+            }
+            
+            @include mobileSmall{
+                font-size: 25px;
+            }
+        }
+
+        form{
+            width: 70%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around; 
+            
+            @include mobile{
+                
+            }
+            
+            @include mobileTab{
+                
+            }
+
+            @include mobileSmall{
+                margin: 5px;
+            }
+
+
+                input{
+                    width: 300px;
+                    height: 30px;
+                    font-size: 14px;
+
+                    @include mobile{
+                        width: 197px;
+                    }
+                    
+                    @include mobileTab{
+                        width: 196px;
+                    }
+            
+                    @include mobileSmall{
+                        width: 142px;
+                        margin: 5px;
+                        
+                    }
+
+                }
+
+                textarea{
+                    width: 300px;
+                    height: 200px;
+                    font-size: 14px;
+
+                    
+                    @include mobile{
+                        width: 200px;
+                        font-size: 20px;
+                    }
+
+                    @include mobileTab{
+                        width: 180px;
+                        font-size: 20px;
+                        height: 75%;
+                    }
+
+                    }
+
+                button{
+                    width: 150px;
+                    height: 30px;
+                    color: white;
+                    background-color: grey;
+                    border: none;
+                    border-radius: 50px;
+                    font-weight: 500;
+                    cursor: pointer;
+                    
+
+                    &:focus{
+                        outline: none;
+                        }
+
+                        @include mobileTab{
+                            margin: 5px;
+                        }
+
+                }
+        }
+
+        
+    }
+}

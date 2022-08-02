@@ -1,0 +1,133 @@
+@import "../../global.scss";
+
+.portfolio{
+    background: #EAE5E6;
+    display: flex;
+
+    @include mobile{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        color: black;
+        overflow: hidden;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+
+        @include mobile{
+            flex-wrap: wrap;
+            flex: 0.6;
+        }
+
+        @include mobileTab{
+            flex-wrap: wrap;
+            flex: 0.7;
+        }
+
+        @include mobileSmall{
+            flex-wrap: wrap;
+            flex: 0.7;
+        }
+        
+        
+
+        h1{
+            font-size: 40px;
+            margin: 1rem 0;
+
+            @include mobile{
+                font-size: 32px;
+            }
+            @include mobileTab{
+                font-size: 18px;
+            }
+
+            @include mobileSmall{
+                font-size: 14px;
+            }
+        }
+
+        p{
+            margin: 0.5rem;
+            font-size: 20px;
+            font-weight: 400;
+
+            @include mobile{
+                font-size: 24px;
+            }
+
+            @include mobileTab{
+                font-size: 18px;
+            }
+
+            @include mobileSmall{
+                font-size: 11px;
+            }
+            
+        }
+    }
+    .right{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: black;
+
+        @include mobile{
+            flex-wrap: wrap;
+            flex: 0.5;
+            
+        }
+
+        @include mobileTab{
+            flex-wrap: wrap;
+            flex: 0.3;
+        }
+
+        @include mobileSmall{
+            flex-wrap: wrap;
+            flex: 0.3;
+        }
+
+        h1{
+            font-size: 40px;
+
+            @include mobile{
+                font-size: 32px;
+            }
+            @include mobileTab{
+                font-size: 18px;
+            }
+
+            @include mobileSmall{
+                font-size: 14px;
+            }
+        }
+
+        p{
+            margin: 0.3rem;
+            font-size: 20px;
+            font-weight: 400;
+
+            @include mobile{
+                font-size: 24px;
+            }
+
+            @include mobileTab{
+                font-size: 18px;
+            }
+
+            @include mobileSmall{
+                font-size: 10px;
+            }
+            
+        }
+
+        
+    }
+}
